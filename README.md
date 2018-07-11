@@ -11,15 +11,15 @@ After downloading the project you need to set the GOPATH variable to the root of
 ```cd OpenNMT-py```
 ```pip3 install -r requirements.txt```
 
-##Preprocessing Data
+## Preprocessing Data
 
 ```python3 preprocess.py -train_src data/en-train.txt -train_tgt data/fa-train.txt -valid_src data/en-val.txt -valid_tgt data/fa-val.txt -save_data data/demo```
 
-##Training the model
+## Training the model
 
 ```python3 train.py -data data/demo -save_model demo-model```
 
-##Testing
+## Testing
 
 ```python3 translate.py -model demo-model_XYZ.pt -src data/en-test.txt -output pred.txt -replace_unk -verbose```
 
